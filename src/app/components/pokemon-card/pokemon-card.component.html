@@ -1,4 +1,11 @@
 <div class="bg-white p-4 rounded shadow hover:shadow-lg">
   <h2 class="text-lg font-bold">{{ capitalizeFirstLetter(pokemon.name) }}</h2>
-  <a [href]="pokemon.url" target="_blank" class="text-blue-500">Ver detalhes</a>
+  <a (click)="showDetails()" class="text-blue-500 cursor-pointer">
+    {{ showDetailsFlag ? 'Ocultar detalhes' : 'Ver detalhes' }}
+  </a>
+  <div *ngIf="showDetailsFlag && pokemonDetails">
+    <p>Peso: {{ pokemonDetails.weight }} kg</p>
+    <p>Altura: {{ pokemonDetails.height }} m</p>
+    <p>Tipo: {{ getPokemonTypes() }}</p>
+  </div>
 </div>
