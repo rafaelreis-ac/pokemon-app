@@ -30,17 +30,17 @@ Para rodar a aplicação, você precisa instalar as seguintes dependências:
 
 2. Instale o Angular CLI globalmente (se ainda não estiver instalado):
 
-  npm install -g @angular/cli
+   npm install -g @angular/cli
 
 3. Instale o Cypress:
 
-  npm install --save-dev cypress
+   npm install --save-dev cypress
 
 ## Servidor de Desenvolvimento
 
 Para iniciar o servidor de desenvolvimento, execute o comando:
 
-  ng serve
+   ng serve
 
 Navegue para http://localhost:4200/. A aplicação será recarregada automaticamente se você alterar qualquer um dos arquivos de origem.
 
@@ -49,7 +49,7 @@ Navegue para http://localhost:4200/. A aplicação será recarregada automaticam
 Testes End-to-End
   Para executar os testes end-to-end via Cypress, execute:
 
-  npx cypress open
+   npx cypress open
 
 Selecione o arquivo de teste pokemon-list.spec.js para rodar os testes.
 
