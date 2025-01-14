@@ -22,7 +22,7 @@ Para rodar a aplicação, você precisa instalar as seguintes dependências:
 - Angular CLI (versão 17.3.8 ou superior)
 - Cypress (versão 13.17.0 ou superior)
 
-### Comandos para Instalação
+## Comandos para Instalação
 
 1. Instale as dependências do projeto:
 
@@ -36,7 +36,7 @@ Para rodar a aplicação, você precisa instalar as seguintes dependências:
 
   npm install --save-dev cypress
 
-#### Servidor de Desenvolvimento
+## Servidor de Desenvolvimento
 
 Para iniciar o servidor de desenvolvimento, execute o comando:
 
@@ -44,7 +44,7 @@ Para iniciar o servidor de desenvolvimento, execute o comando:
 
 Navegue para http://localhost:4200/. A aplicação será recarregada automaticamente se você alterar qualquer um dos arquivos de origem.
 
-##### Testes
+## Testes
 
 Testes End-to-End
   Para executar os testes end-to-end via Cypress, execute:
