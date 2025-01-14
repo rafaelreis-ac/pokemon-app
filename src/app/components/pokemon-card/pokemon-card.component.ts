@@ -13,11 +13,17 @@ import { PokemonService } from '../../services/pokemon.service';
 })
 export class PokemonCardComponent {
   @Input() pokemon!: Pokemon;
+  pokemonImage: string = '';
   pokemonDetails: any;
   showDetailsFlag: boolean = false;
 
   constructor(private pokemonService: PokemonService) {}
 
+  ngOnInit(): void {
+    this.pokemonService.getPokemonImage(this.pokemon.name).subscribe(imageUrl => {
+      this.pokemonImage = imageUrl;
+    });
+  }
   capitalizeFirstLetter(name: string): string {
     return name.charAt(0).toUpperCase() + name.slice(1);
   }
