@@ -60,5 +60,4 @@ Os testes end-to-end disponíveis incluem:
   - Alteração do número de itens por página
   - Navegação para a próxima página
 
-Mais Ajuda
 Para obter mais ajuda sobre o Angular CLI, use "ng help" ou consulte a documentação do Angular CLI. 
