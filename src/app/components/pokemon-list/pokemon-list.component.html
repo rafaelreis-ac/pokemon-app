@@ -50,7 +50,7 @@
     >
       Anterior
     </button>
-    <span class="text-gray-700 font-medium">Página {{ currentPage }} de {{ totalPages }}</span>
+    <span class="text-gray-700 font-medium mt-2">Página {{ currentPage }} de {{ totalPages }}</span>
     <button
       (click)="nextPage()"
       [disabled]="currentPage === totalPages"
