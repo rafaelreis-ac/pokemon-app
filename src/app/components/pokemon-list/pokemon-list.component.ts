@@ -54,7 +54,18 @@ export class PokemonListComponent implements OnInit {
 
   onItemsPerPageChange(event: Event): void {
     this.itemsPerPage = parseInt((event.target as HTMLSelectElement).value, 10);
+    this.adjustCurrentPage();
     this.updatePagination();
+  }
+
+  adjustCurrentPage(): void {
+    this.totalPages = Math.ceil(this.filteredPokemons.length / this.itemsPerPage);
+    if (this.currentPage > this.totalPages) {
+      this.currentPage = this.totalPages;
+    }
+    if (this.currentPage < 1) {
+      this.currentPage = 1;
+    }
   }
 
   sortPokemons(): void {
