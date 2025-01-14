@@ -1,11 +1,14 @@
-<div class="bg-white p-4 rounded shadow hover:shadow-lg">
-  <h2 class="text-lg font-bold">{{ capitalizeFirstLetter(pokemon.name) }}</h2>
-  <a (click)="showDetails()" class="text-blue-500 cursor-pointer">
+<div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
+  <h2 class="text-xl font-bold text-gray-800 mb-2">{{ capitalizeFirstLetter(pokemon.name) }}</h2>
+  <a
+    (click)="showDetails()"
+    class="text-blue-500 font-medium hover:underline cursor-pointer"
+  >
     {{ showDetailsFlag ? 'Ocultar detalhes' : 'Ver detalhes' }}
   </a>
-  <div *ngIf="showDetailsFlag && pokemonDetails">
-    <p>Peso: {{ pokemonDetails.weight }} kg</p>
-    <p>Altura: {{ pokemonDetails.height }} m</p>
-    <p>Tipo: {{ getPokemonTypes() }}</p>
+  <div *ngIf="showDetailsFlag && pokemonDetails" class="mt-4">
+    <p class="text-gray-700"><strong>Peso:</strong> {{ pokemonDetails.weight }} kg</p>
+    <p class="text-gray-700"><strong>Altura:</strong> {{ pokemonDetails.height }} m</p>
+    <p class="text-gray-700"><strong>Tipo:</strong> {{ getPokemonTypes() }}</p>
   </div>
 </div>
