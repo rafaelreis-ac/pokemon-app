@@ -38,20 +38,19 @@ Para rodar a aplicação, você precisa instalar as seguintes dependências:
 
 ## Servidor de Desenvolvimento
 
-Para iniciar o servidor de desenvolvimento, execute o comando:
+1. Para iniciar o servidor de desenvolvimento, execute o comando:
 
    ng serve
 
-Navegue para http://localhost:4200/. A aplicação será recarregada automaticamente se você alterar qualquer um dos arquivos de origem.
+2. Navegue para http://localhost:4200/. A aplicação será recarregada automaticamente se você alterar qualquer um dos arquivos de origem.
 
 ## Testes
 
-Testes End-to-End
-  Para executar os testes end-to-end via Cypress, execute:
+1. Para executar os testes end-to-end via Cypress, execute:
 
    npx cypress open
 
-Selecione o arquivo de teste pokemon-list.spec.js para rodar os testes.
+2. Selecione o arquivo de teste pokemon-list.spec.js para rodar os testes.
 
 Os testes end-to-end disponíveis incluem:
 
