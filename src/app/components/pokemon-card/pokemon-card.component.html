@@ -7,8 +7,8 @@
     {{ showDetailsFlag ? 'Ocultar detalhes' : 'Ver detalhes' }}
   </a>
   <div *ngIf="showDetailsFlag && pokemonDetails" class="mt-4">
-    <p class="text-gray-700"><strong>Peso:</strong> {{ pokemonDetails.weight }} kg</p>
-    <p class="text-gray-700"><strong>Altura:</strong> {{ pokemonDetails.height }} m</p>
+    <p class="text-gray-700"><strong>Peso:</strong> {{ pokemonDetails.weight / 10}} kg</p>
+    <p class="text-gray-700"><strong>Altura:</strong> {{ pokemonDetails.height * 10}} cm</p>
     <p class="text-gray-700"><strong>Tipo:</strong> {{ getPokemonTypes() }}</p>
   </div>
 </div>
