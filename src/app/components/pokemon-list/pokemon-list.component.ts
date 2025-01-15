@@ -42,6 +42,7 @@ export class PokemonListComponent implements OnInit {
     this.filteredPokemons = this.pokemons.filter((pokemon) =>
       pokemon.name.toLowerCase().includes(this.searchTerm.toLowerCase())
     );
+    this.currentPage = 1;
     this.sortPokemons();
     this.updatePagination();
   }
